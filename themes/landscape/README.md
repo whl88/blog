@@ -1,4 +1,4 @@
-玩# Landscape
+# Landscape
 
 A brand new default theme for [Hexo].
 
