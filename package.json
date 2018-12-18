@@ -1,12 +1,13 @@
 {
-  "name": "wanghl's blog",
-  "version": "0.0.0",
+  "name": "wanghl's_blog",
+  "version": "0.0.1",
   "private": true,
   "hexo": {
     "version": "3.8.0"
   },
   "scripts": {
-    "deploy":"hexo deploy"
+    "deploy":"hexo deploy --generate",
+    "dev-server":"hexo s"
   },
   "dependencies": {
     "hexo": "^3.7.0",

@@ -87,40 +87,40 @@ deploy:
 SEOTitle: 王宏亮的博客 | wanghl's Blog
 header-img: img/home-bg.jpg
 email: 401765060@qq.com
-keyword: "关键词"
+keyword: "java web 前端"
 
 # SNS settings
 # RSS: false
-weibo_username:     新浪微博
-zhihu_username:     知乎
-github_username:    GitHub
-twitter_username:   推特
-facebook_username:  脸书
-linkedin_username:  领英
+#weibo_username:     勤奋的Code
+zhihu_username:     wang-hong-liang-5-45
+github_username:    whl88
+#facebook_username:  脸书
+#twitter_username:   推特
+#linkedin_username:  领英地址
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 # Disqus settings
-disqus_username: Disqus用户名
+#disqus_username: Disqus用户名
 
 # Duoshuo settings
-duoshuo_username: 多说账号
+#duoshuo_username: 多说账号
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+ba_track_id: c7a89a27252683d867b45e899a3d41cc
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: 'UA-131158522-1'            # Format: UA-xxxxxx-xx
+ga_domain: whl88.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "靓照!"
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "保持一颗好奇心!"
+sidebar-avatar: img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
@@ -129,23 +129,11 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Kaijun's Blog",
-        href: "http://blog.kaijun.rocks"
+        title: "CC's Blog",
+        href: "https://sangchao8.github.io/"
     },{
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
+        title: "VUE",
+        href: "https://www.vuejs.org/"
+    },
 ]
 #huxblog Setting End
