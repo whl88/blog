@@ -5,8 +5,8 @@
 # Site
 title: 王宏亮
 subtitle: 技术分享博客
-description: 记事本
-keywords: JAVA 前端
+description: 技术博客
+keywords: JAVA,前端
 author: 王宏亮
 language: zh-CN
 timezone: Asia/Shanghai
@@ -74,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: huxblog
+theme: snippet
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -82,6 +82,7 @@ deploy:
   type: git
   repo: https://github.com/whl88/whl88.github.io
   branch: master
+
 
 #huxblog Setting Start----------------------------------------------------------------
 # Site settings
