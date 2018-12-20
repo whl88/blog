@@ -5,6 +5,8 @@ tags:
 - Matomo 
 - JavaScript
 - 单页面
+keywords: Matomo,JavaScript,单页面
+description: 最近在企业内网用 Matomo 做网站跟踪分析，有一个需求是跟踪手机端的应用（SPA应用）。研究了一番记录如下。
 ---
 单页面应用（[SPA](https://baike.baidu.com/item/SPA/17536313)）随着[Vue](https://cn.vuejs.org/ "Vue 官方网站")、[Angular](https://angular.io/ "angular 官网")、[React](https://react.docschina.org/ "中文文档")等框架的崛起，已经成为一种潮流。由于单页面应用自始至终都一个在同一个Docment上渲染元素，页面根本不跳转，这也让 Matomo 在默认用法下不能自动追踪。  
 最近在企业内网用 Matomo 做网站跟踪分析，有一个需求是跟踪手机端的应用（SPA应用）。研究了一番记录如下。  
@@ -14,7 +16,7 @@ tags:
 # 重新设置自定义变量 #
 用下面的代码将 page 作用域的 自定义变量删除：
 ```js
-_paq.push(['deleteCustomVariables', 'page']);·
+_paq.push(['deleteCustomVariables', 'page']);
 ```
 
 > 自定义变量有 page 作用域和 visit 作用域之分。page 作用域内的变量描述的是当前页面本身的属性，在每次页面请求的时候都可以变化，比如“文章分类”、“商品名称”之类的；visit 作用域内的变量在一个完整的session中只允许有一个值，如果一次 session 中的几次请求带了不同的值，就会取最后一个，这种作用域的变量适合存“访问者性别”，“访问者身份证号”等跟访问者有关的属性。关于自定义变量就说这么多，更多的信息可以先查看[官方文档](https://developer.matomo.org/guides/tracking-javascript-guide#custom-variables "“自定义变量” 官方文档")，我会尽快出一篇关于 Matomo 自定义变量 和 自定义维度 的一篇文章。
@@ -31,6 +33,13 @@ _paq.push(['setGenerationTimeMs', timeItTookToLoadPage]);
 _paq.push(['setReferrerUrl', previousPageUrl]);
 ```
 
+>重要提示：
+```js
+_paq.push(['deleteCustomVariables', 'page']);
+_paq.push(['setGenerationTimeMs', timeItTookToLoadPage]);
+_paq.push(['setReferrerUrl', previousPageUrl]);
+```
+>上面的代码执行后需要执行`_paq.push(['trackPageView']);`才能提交修改。具体的可以看文末的例子
 # 追踪新内容 #
 当新的内容被加载到 Document 中，新内容这一块我们得让 Matomo 扫描。下面的一些代码不是必须的，根据你的需求来定。
 
