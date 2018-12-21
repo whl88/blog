@@ -1,12 +1,10 @@
 ---
-title: Matomo JavaScript 方式追踪单页面应用（SPA）
-date: 2018-12-19 21:23:13
-tags:
-- Matomo 
-- JavaScript
-- 单页面
-keywords: Matomo,JavaScript,单页面
-description: 最近在企业内网用 Matomo 做网站跟踪分析，有一个需求是跟踪手机端的应用（SPA应用）。研究了一番记录如下。
+  title: Matomo JavaScript 方式追踪单页面应用（SPA）
+  date: 2018-12-19 21:23:13 
+  categories: ['前端'] 
+  tags: ['Matomo','JavaScript','单页面']
+  comments: true   
+  img: 
 ---
 单页面应用（[SPA](https://baike.baidu.com/item/SPA/17536313)）随着[Vue](https://cn.vuejs.org/ "Vue 官方网站")、[Angular](https://angular.io/ "angular 官网")、[React](https://react.docschina.org/ "中文文档")等框架的崛起，已经成为一种潮流。由于单页面应用自始至终都一个在同一个Docment上渲染元素，页面根本不跳转，这也让 Matomo 在默认用法下不能自动追踪。  
 最近在企业内网用 Matomo 做网站跟踪分析，有一个需求是跟踪手机端的应用（SPA应用）。研究了一番记录如下。  

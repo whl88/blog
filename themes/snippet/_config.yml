@@ -53,8 +53,8 @@ jsonContent:
     title: true
     text: true
     content: true
-    categories: false
-    tags: false
+    categories: true
+    tags: true
 
 ## 网站公告设置
 notification: |-
@@ -131,7 +131,7 @@ defaultImgs:
   - /img/default-3.jpg
 
 ## 截取文章首页描述字数
-excerptLength: 120
+excerptLength: 110
 
 ## 是否开启文章目录
 toc: true
@@ -199,8 +199,8 @@ changyan:
 ## Valine评论
 valine:
    enable: true
-   appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
-   appKey: erIpQac4azoCmgfBB7Dl9maa
+   appId: CxcHvL7lGp624Mtzr04s00U5-gzGzoHsz
+   appKey: 7CPvU50bEMm4D83mC4AWBtLj
    placeholder: 说点什么吧
    notify: false
    verify: false
@@ -210,8 +210,8 @@ valine:
 
 ## 网站访客统计
 visit_counter:
-   site: false
-   page: false
+   site: true
+   page: true
 
 ## 网站访问统计分析
 
@@ -236,4 +236,4 @@ baidu_push: true
 #网站主题配置
 since: 2018
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
-version: 1.1.1
+version: 1.2.1
