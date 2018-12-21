@@ -79,9 +79,9 @@ social:
 # - name: QQ群
 #   icon: users
 #   href: /
- - name: RSS
-   icon: feed
-   href: /atom.xml
+# - name: RSS
+#   icon: feed
+#   href: /atom.xml
 
 ## 文章分类设置
 cate_config:
@@ -143,7 +143,7 @@ highlightTheme:
 bootstrap:
 
 ## ICON配置
-fontAwesome:
+fontAwesome: //cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
 
 ## 文章过期提醒功能
 warning:

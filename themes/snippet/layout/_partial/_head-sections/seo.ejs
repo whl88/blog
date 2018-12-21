@@ -1,9 +1,13 @@
 <!--SEO-->
-<% if(config.description){ %>
+<% if(page.description){ %>
+<meta name="description" content="<%= page.description%>"/>
+<% }else if(config.description){ %>
 <meta name="description" content="<%= config.description%>"/>
 <% } %>
 
-<% if(config.keywords){ %>
+<% if(page.keywords){ %>
+<meta name="keywords" content="<%= page.keywords%>"/>
+<% }else if(config.keywords){ %>
 <meta name="keywords" content="<%= config.keywords%>"/>
 <% } %>
 
