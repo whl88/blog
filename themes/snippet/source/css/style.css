@@ -1071,6 +1071,7 @@ pre {
 }
 #article-toc ol {
   list-style: none;
+  padding-left:20px;
 }
 #article-toc .toc {
   padding-left: 2em;
