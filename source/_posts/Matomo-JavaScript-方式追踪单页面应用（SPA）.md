@@ -1,6 +1,7 @@
 ---
   title: Matomo JavaScript 方式追踪单页面应用（SPA）
-  date: 2018-12-19 21:23:13 
+  date: 2018-12-19 21:23:13
+  updated: 2018-12-23 16:57:38
   categories: ['前端'] 
   tags: ['Matomo','JavaScript','单页面']
   comments: true   
@@ -19,7 +20,8 @@
 _paq.push(['deleteCustomVariables', 'page']);
 ```
 
-> 自定义变量有 page 作用域和 visit 作用域之分。page 作用域内的变量描述的是当前页面本身的属性，在每次页面请求的时候都可以变化，比如“文章分类”、“商品名称”之类的；visit 作用域内的变量在一个完整的session中只允许有一个值，如果一次 session 中的几次请求带了不同的值，就会取最后一个，这种作用域的变量适合存“访问者性别”，“访问者身份证号”等跟访问者有关的属性。关于自定义变量就说这么多，更多的信息可以先查看[官方文档](https://developer.matomo.org/guides/tracking-javascript-guide#custom-variables "“自定义变量” 官方文档")，我会尽快出一篇关于 Matomo 自定义变量 和 自定义维度 的一篇文章。
+> 自定义变量有 page 作用域和 visit 作用域之分。page 作用域内的变量描述的是当前页面本身的属性，在每次页面请求的时候都可以变化，比如“文章分类”、“商品名称”之类的；visit 作用域内的变量在一个完整的session中只允许有一个值，这种作用域的变量适合存“访问者性别”，“访问者身份证号”等跟访问者有关的属性。关于自定义变量就说这么多，更多的信息可以先查看[官方文档](https://developer.matomo.org/guides/tracking-javascript-guide#custom-variables "“自定义变量” 官方文档")，我会尽快出一篇关于 Matomo [[自定义变量]](/2018/12/23/Matomo-Javascript-方式追踪-自定义变量/index.html "Matomo Javascript-方式追踪-自定义变量")
+ 和 自定义维度 的一篇文章。
 
 # 设置页面加载时间 #
 你可能会用 Ajax 从服务器实时加载新模块，那你得做一个计时，并且把加载这个模块的耗时（毫秒数）通过下面这个 API 发送给 Matomo 。
