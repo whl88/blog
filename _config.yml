@@ -79,6 +79,9 @@ theme: snippet
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/whl88/whl88.github.io
-  branch: master
+ - type: git
+   repo: https://github.com/whl88/whl88.github.io
+   branch: master
+ - type: git
+   repo: https://gitee.com/whl88/whl88
+   branch: master
