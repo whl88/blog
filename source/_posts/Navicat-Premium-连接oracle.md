@@ -8,7 +8,7 @@ tags:
   - oracle
 date: 2019-01-03 14:20:25
 keywords: ORA-12514,ORA-12737
-description:
+description: Navicat Premium 连接oracle报错。
 ---
 
 # Navicat Premium 简介
