@@ -22,9 +22,12 @@ description: 介绍一下Gitblit 工单功能的开启方法
 
 ## 解决方法
 
-在网上搜索一番，原来工单的功能并不是默认打开的。
-
-如果需要打开，可以在配置文件`D:\gitblit-1.8.0\data\defaults.properties`中搜索`tickets.service`并为其赋值`tickets.service = com.gitblit.tickets.BranchTicketService`，重启Gitblit 就可以啦。
+在网上搜索一番，原来工单的功能并不是默认打开的。 
+### 打开步骤
+1. 找到你的配置文件`D:\gitblit-1.8.0\data\defaults.properties`
+2. 搜索`tickets.service`
+3. 为其赋值`tickets.service = com.gitblit.tickets.BranchTicketService`
+4. 重启Gitblit
 
 ## 关于 tickets.service
 
@@ -36,13 +39,13 @@ tickets.service有三个取值：
 ptickets.service = com.gitblit.tickets.FileTicketService
 ```
 
-1. 工单将使用一个版本库来保存
+2. 工单将使用一个版本库来保存
 
 ```properties
 tickets.service = com.gitblit.tickets.BranchTicketService
 ```
 
-1. 工单将使用Redis来保存
+3. 工单将使用Redis来保存
 
 ```properties
 tickets.service = com.gitblit.tickets.RedisTicketService
